@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#e2dccd"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:id="@+id/login_rl"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/oldcar">
+
+        <ImageView
+            android:id="@+id/iv_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/logo11" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearcardLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/linear_radius"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_loginhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SIGN IN"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/email"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+
+            app:met_floatingLabel="highlight"
+             />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edt_loginpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/lock"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            app:met_floatingLabel="highlight"
+            app:met_minCharacters="8" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearcardLogin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/design_default_color_primary_dark"
+        android:text="LOGIN"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/b_login">
+
+        <TextView
+            android:id="@+id/tv_Forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/forgot_password"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_below="@id/tv_Forgot"
+            android:layout_marginTop="40dp"
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/tv_newUser"
+            android:text="SignUp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_below="@id/tv_Forgot"
+            android:layout_marginTop="40dp"
+            android:id="@+id/tv_newUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="New User?  "
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_carInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bak6plan"
+    tools:context=".CarInfo">
+
+
+    <ImageView
+        android:id="@+id/info_car_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="8dp"
+        android:layout_weight="4"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_car_image"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/info_car_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Car Name"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_car_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_car_name"
+            android:layout_margin="8dp"
+            android:text="Car Model"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/info_car_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_car_model"
+            android:layout_margin="8dp"
+            android:text="Body Color"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/info_car_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_car_color"
+            android:layout_margin="8dp"
+            android:textColor="@color/white"
+            android:text="Price"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/info_car_discription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_car_price"
+            android:layout_margin="8dp"
+            android:textColor="@color/white"
+            android:text="Car Descripiton"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

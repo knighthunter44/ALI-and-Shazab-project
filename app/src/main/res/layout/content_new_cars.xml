@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NewCars"
+    android:background="@drawable/bak6plan"
+    tools:showIn="@layout/app_bar_new_cars">
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/searchNewCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:mt_hint="Enter Your Car"
+        app:mt_speechMode="false"
+        android:layout_margin="5dp"
+        app:mt_roundedSearchBarEnabled="true"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_newCar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchNewCar"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        app:active_item_color="@color/colorAccent"
+        app:centre_button_color="@android:color/holo_red_dark"
+        app:inactive_item_color="@android:color/black"
+        app:active_centre_button_icon_color="@android:color/white"
+        app:space_background_color="@android:color/white"
+        app:centre_button_icon="@drawable/ic_add_circle_black_24dp"
+        app:space_item_icon_size="30dp"
+        app:space_item_icon_only_size="@dimen/space_item_icon_only_size"
+        app:space_item_text_size="@dimen/space_item_text_default_size" />
+
+</RelativeLayout>

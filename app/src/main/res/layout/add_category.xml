@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="4dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:background="@drawable/linear_radius"
+        android:id="@+id/addcat_cardV"
+        >
+        <ImageView
+            android:id="@+id/iv_category_pic"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/cameraicon" />
+    </androidx.cardview.widget.CardView>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edt_brandName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Brand name"
+             />
+
+</LinearLayout>

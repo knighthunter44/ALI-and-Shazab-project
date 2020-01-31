@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawerClasses.MyAccount">
+
+    <include
+        android:id="@+id/toolbar_account"
+        layout="@layout/toolbar_account" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/toolbar_account"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/profilebg2"
+        android:src="@drawable/cameraicon"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_pro_edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_margin="10dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/pro_edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:focusableInTouchMode="false"
+            android:hint="Name"
+            android:inputType="text"
+            android:text="Saeed ahmed"
+            android:textSize="18sp"
+            app:met_floatingLabel="highlight" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_pro_phoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_pro_edtName"
+        android:layout_margin="10dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/pro_phoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:focusableInTouchMode="false"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:text="+92343-0043218"
+            android:textSize="18sp"
+            app:met_floatingLabel="highlight" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_pro_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_pro_phoneNum"
+        android:layout_margin="10dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/pro_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:focusableInTouchMode="false"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:text="Sjunejo95@gmail.com"
+            android:textSize="18sp"
+            app:met_floatingLabel="highlight" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_pro_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_pro_email"
+        android:layout_margin="10dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/pro_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:focusableInTouchMode="false"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text="Shabbir Abbas"
+            android:textSize="18sp"
+            app:met_floatingLabel="highlight" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_pro_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_pro_password"
+        android:layout_margin="10dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/pro_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:focusableInTouchMode="false"
+            android:hint="Address"
+            android:inputType="text"
+            android:textSize="18sp"
+            app:met_floatingLabel="highlight" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

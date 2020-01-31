@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4E96D3</color>
+    <color name="colorPrimaryDark">#4E96D3</color>
+    <color name="colorAccent">#4E96D3</color>
+    <color name="overlayBackground">#7f333639</color>
+    <color name="overLayactionBar">#0e0d0e</color>
+    <color name="blue_light">#91C0E6</color>
+</resources>

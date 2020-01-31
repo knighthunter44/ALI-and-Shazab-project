@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "357004904061",
+    "firebase_url": "https://mycar-e3b84.firebaseio.com",
+    "project_id": "mycar-e3b84",
+    "storage_bucket": "mycar-e3b84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357004904061:android:5be9fa149cd273d45b1314",
+        "android_client_info": {
+          "package_name": "com.example.carhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357004904061-75svellughbenvtja0g8qad4q09t83u1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.carhub",
+            "certificate_hash": "4cdd05025da5baf7d80e22d927da6bf100a17fb0"
+          }
+        },
+        {
+          "client_id": "357004904061-k8ga1idksseheck9ujo83os3lv3p226d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkRAKCAqIRcRC4zu2ZRj-43HPvSERZPgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357004904061-k8ga1idksseheck9ujo83os3lv3p226d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

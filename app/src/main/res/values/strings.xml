@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CarHub</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="add_category">Add Category</string>
+    <string name="user_name">Welcome</string>
+    <string name="user_email">sjunejo95@gmail.com</string>
+    <string name="forgot_password">Forgot Password? </string>
+    <string name="title_activity_use_cars">UseCars</string>
+    <string name="title_activity_newcars">Newcars</string>
+    <string name="upload_photos">Upload Photos</string>
+    <string name="search_title">Search Cars</string>
+    <string name="Model_fragment">Model of cars</string>
+    <string name="Category_fragment">Category of cars</string>
+    <string name="Make_fragment">Make of cars</string>
+    <string name="BodyType_fragment">Body Type of cars</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

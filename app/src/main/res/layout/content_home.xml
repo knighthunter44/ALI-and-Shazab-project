@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_homelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bak6plan"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:mt_hint="Enter Your Car"
+        app:mt_speechMode="false"
+        app:mt_maxSuggestionsCount="10"
+        android:layout_margin="5dp"
+        app:mt_roundedSearchBarEnabled="true"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/searchBar"
+        app:cardCornerRadius="6dp">
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/rl_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/space"
+        android:layout_below="@+id/cv_imageSlider">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_browseText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/bak6plan"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:id="@+id/browse"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bak6plan"
+                android:text="Browse"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/random_carList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cv_browseText"
+            android:layout_marginTop="2dp"
+            android:scrollbars="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:active_centre_button_icon_color="@android:color/white"
+        app:active_item_color="@color/colorAccent"
+        app:centre_button_color="@android:color/holo_red_dark"
+        app:centre_button_icon="@drawable/ic_add_circle_black_24dp"
+        app:inactive_item_color="@android:color/black"
+        app:space_background_color="@color/white"
+        app:space_item_icon_only_size="@dimen/space_item_icon_only_size"
+        app:space_item_icon_size="30dp"
+        app:space_item_text_size="@dimen/space_item_text_default_size" />
+
+
+</RelativeLayout>
